@@ -1,0 +1,179 @@
+* { /* Reset inicial */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+html { /* Tamanho de exibição da página */
+    height: 500vh;
+}
+
+.container { /* Definindo a largura da estrutura */
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex { /* alinhando os links do header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header { /* Definindo tamanho e largura do header */
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem { /* Definindo a cor do fundo do header após a rolagem */
+    background-color: #000000e0;
+    padding: 20px 4%;
+}
+
+header h1 { /* Cor do h1 do header */
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+header h1:hover {
+    color: #7700ff;
+    transition: color 0.3s;
+}
+
+header span {
+    color: #7700ff;
+}
+
+header a { /* Estilizando o h1 no header */
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+header ul { /* Estilizando os links */
+    list-style-type: none;
+}
+
+header ul li { /* Colocando os links em linha */
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+header ul li a { /* estilizando os links */
+    color: #ffffff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+header ul li a:hover { /* Estilizando para quando passar o mouse */
+    color: #7700ff;
+    transition: color 0.2s;
+}
+
+header ul li span { /* Cor segundária dos links no header */
+    color: #7700ff;
+}
+
+.banner { /* Definindo o tamanho do banner inicial */
+    height: 100vh;
+    background-image: url(imagens/Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex; /* Alinhando o h1 no centro */
+    flex-direction: column; /* colocando os h1 e h2 em linhas separadas */
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 { /* Definindo o tamanho do texto h1 do banner inicial  */
+    font-size: 8em;
+}
+
+.banner h2 {
+    font-size: 30px;
+}
+
+section {
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1 { /* Definindo a cor do texto h1 na página inicial */
+    color: #ffffff;
+    font-family: oswald;
+}
+
+section h2 { /* Definindo o h2 */
+    color: #fff;
+    font-family: oswald;
+}
+
+section h3 { /* Definindo o h2 */
+    color: #fff;
+    font-family: oswald;
+}
+
+.botao img {
+    height: 65px;
+    margin-bottom: -230px;
+    animation: jumping 0.75s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes jumping {
+    from {transform: translateY(-15px);}
+    50% {transform: translateY(0);}
+    to {transform: translateY(-15px);}
+}
+
+.section1 {
+    max-width: 100%;
+}
+
+.section1 img {
+    height: 350px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background-color: #7700ff;
+    padding: 3px;
+}
+
+.section1 h2 {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.section1 h2 span {
+    color: #7700ff;
+    font-size: 40px;
+    font-family: oswald;
+}
+
+.section1 h3 {
+    font-size: 20px;
+    background-color: #7700ffed;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.text {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.section1 h2 {
+    margin-bottom: 10px;
+}
+
+body { /* Definindo a cor do fundo do site */
+    background-color: rgb(0, 0, 0);
+}
